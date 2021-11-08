@@ -1,1 +1,243 @@
-"hello world" 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Include CSS here when they exist-->
+        <link rel="stylesheet" href="style.css"/>
+
+        <!--Include JS here when they exist-->
+        <script src="javascript.js"></script>
+
+        <title>Alan Harris</title>
+    </head>
+
+    <body class="Body">
+        <!--Navigation Bar-->
+        <nav>
+            <div>
+                <ul class="NavBar">
+                    <li><a href="#HOME">Home</a></li>
+                    <li><a href="#PROJECTS">Projects</a></li>
+                    <li><a href="#CONTACT">Contact</a></li>
+                    <li class="ExtraStyling"><a href="Extra.html">Extra</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="HOME" class="Bio">
+            <!--Basic introduction-->
+            <p>I am a computer science graduate from Georgia Southern University with a passion for computer graphics and mathematics.<br>
+                Below you will find some projects that I have worked on.
+            </p>
+
+            <a class="ResumeButton" href="https://drive.google.com/file/d/14SQwQ5RB-T9h51z2aJ_t5Oc65b3XK5wW/view">
+                <button>Resume</button>
+            </a>
+        </div>
+
+        <div id="PROJECTS" class="Projects">
+            
+            <h3 class="ProjectSeparator">General Projects</h3>
+            <!--Show the following projects as normal projects
+                GLIB
+                PixelSmart
+                6502EMU 
+                Database Project
+                SoftwareEngineering Final Project
+            -->
+            <div class="flexbox-container">
+                <div class="flexbox-item">
+                    <h2>GLib</h2>
+                    <button class="cardImage" onclick="showGridInfo('GLibInfo');">
+                        <img src="Images/GLib.png">
+                    </button>
+
+                    <div id="GLibInfo" class="flexbox-info">
+                        <p>A static C++ library for general purpose development.</p>
+                        <p>Features include:</p>
+                        <ul>
+                            <li>Input for Keyboard, Mouse, DInput and <br/>XInput devices</li>
+                            <li>Math functions for transformations</li>
+                            <li>XML document loading</li>
+                            <li>A series of Graphics functions</li>
+                            <li>An audio recording and playback system</li>
+                        </ul>
+                        <p><a href="https://github.com/Davidah121/GLib">Project Link</a></p>
+                    </div>
+                </div>
+
+                <div class="flexbox-item">
+                    <h2>Pixel Smart</h2>
+                    <button class="cardImage" onclick="showGridInfo('PixelSmartInfo');">
+                        <img src="Images/PixelSmart.png">
+                    </button>
+
+                    <div id="PixelSmartInfo" class="flexbox-info">
+                        <p>A simple painting application created using Java.</p>
+                        <p>It uses standard Object Oriented Design practices.</p>
+                        <p>Features include:</p>
+                        <ul>
+                            <li>Multiple Layers</li>
+                            <li>Different Brush types</li>
+                            <li>File saving and loading</li>
+                            <li>Undo and Redo</li>
+                        </ul>
+                        <p><a href="https://github.com/dm06724/PixelSmart">Project Link</a></p>
+                    </div>
+                </div>
+
+                <div class="flexbox-item">
+                    <h2>6502 Emulator</h2>
+                    <button class="cardImage" onclick="showGridInfo('6502EmuInfo');">
+                        <img src="Images/6502Emu.png">
+                    </button>
+
+                    <div id="6502EmuInfo" class="flexbox-info">
+                        <p>An C++ emulator for the 6502 processor used <br/>in the NES</p>
+                        <p>Features include:</p>
+                        <ul>
+                            <li>An Assembler and Deassembler</li>
+                            <li>A memory viewer</li>
+                            <li>Cycle count</li>
+                            <li>Advance by a single step when running</li>
+                        </ul>
+                        <p><a href="https://github.com/Davidah121/6502EMU">Project Link</a></p>
+                    </div>
+                </div>
+
+                <div class="flexbox-item">
+                    <h2>Database Project</h2>
+                    <button class="cardImage" onclick="showGridInfo('databaseInfo');">
+                        <img src="Images/DatabaseProject.png">
+                    </button>
+
+                    <div id="databaseInfo" class="flexbox-info">
+                        <p>Final Project for my Database course</p>
+                        <p>Uses C# and WPF to connect to the database <br/>and provide a user interface</p>
+                        <p>Full functionality requires the original database.</p>
+                        <p><a href="https://github.com/Davidah121/Database-Project">Project Link</a></p>
+                    </div>
+                </div>
+
+                <div class="flexbox-item">
+                    <h2>Project Camelia</h2>
+                    <button class="cardImage" onclick="showGridInfo('ProjectCameliaInfo');">
+                        <img src="Images/ProjectCamelia.png">
+                    </button>
+
+                    <div id="ProjectCameliaInfo" class="flexbox-info">
+                        <p>Final project for Software Engineering</p>
+                        <p>The website was created to identify Camelia from an image.</p>
+                        <p>Uses HTML, Javascript, Docker, Drupal, PHP, and PHP Unit</p>
+                        <p>The project team used Aglie principles while developing.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <h3 class="ProjectSeparator">Game Projects</h3>
+            <!--Show the following projects as game projects
+                QuickPongGame
+                Tetris24h
+                NocturnalForest
+                DEWM
+                DataStruturesGame
+                -->
+                <div class="flexbox-container">
+
+                    <div class="flexbox-item">
+                        <h2>Tetris24h</h2>
+                        <button class="cardImage" onclick="showGridInfo('Tetris24hInfo');">
+                            <img src="Images/Tetris24h.png">
+                        </button>
+    
+                        <div id="Tetris24hInfo" class="flexbox-info">
+                            <p>The game Tetris created in C++ in 24 hours</p>
+                            <p>Was created from scratch with no external libraries<br/>except the Windows SDK</p>
+                            <p>A second version was created that is a more polished<br/>version with 5 additional hours of development</p>
+                            <p>Features Include:</p>
+                            <ul>
+                                <li>Audio output</li>
+                                <li>XInput Support</li>
+                                <li>2 Player support</li>
+                                <li>A main menu</li>
+                                <li>An options menu</li>
+                            </ul>
+                            <p><a href="https://github.com/Davidah121/Tetris24h">Project Link</a></p>
+                        </div>
+                    </div>
+
+                    <div class="flexbox-item">
+                        <h2>Quick Pong Game</h2>
+                        <button class="cardImage" onclick="showGridInfo('QuickPongGameInfo');">
+                            <img src="Images/QuickPongGame.png">
+                        </button>
+    
+                        <div id="QuickPongGameInfo" class="flexbox-info">
+                            <p>The game Pong created in C++ in about 7-8 hours</p>
+                            <p>Was created from scratch with no external libraries<br/>except the Windows SDK</p>
+                            <p>Requires 2 players and ends when one player reaches<br/>5 points</p>
+                            <p><a href="https://github.com/Davidah121/QuickPongGame">Project Link</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="flexbox-item">
+                        <h2>Nocturnal Forest</h2>
+                        <button class="cardImage" onclick="showGridInfo('NocturnalForestInfo');">
+                            <img src="Images/NocturnalForest.png">
+                        </button>
+    
+                        <div id="NocturnalForestInfo" class="flexbox-info">
+                            <p>A MetroidVania styled game created in Unity</p>
+                            <p>Created for the Aurora Game Development Club<br/>at Georgia Southern</p>
+                            <p>Served as a project lead and musician</p>
+                            <p><a href="https://thodzen.itch.io/nocturnal-forest">Download Page</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="flexbox-item">
+                        <h2>DEWM</h2>
+                        <button class="cardImage" onclick="showGridInfo('DEWMInfo');">
+                            <img src="Images/DEWM.png">
+                        </button>
+    
+                        <div id="DEWMInfo" class="flexbox-info">
+                            <p>A 2D shooter game inspired by DOOM created in Unity</p>
+                            <p>Created for the Aurora Game Development Club<br/>at Georgia Southern</p>
+                            <p>Served as a musician and advisory role for development</p>
+                            <p><a href="https://thodzen.itch.io/d">Download Page</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="flexbox-item">
+                        <h2>DataStrutures Game</h2>
+                        <button class="cardImage" onclick="showGridInfo('DataStruturesGameInfo');">
+                            <img src="Images/DataStructuresGame.png">
+                        </button>
+    
+                        <div id="DataStruturesGameInfo" class="flexbox-info">
+                            <p>A game designed to demonstrate data structure concepts<br/>created in Unity</p>
+                            <p>Created as a final project for the class Data Structures</p>
+                            <p><a href="https://thodzen.itch.io/stack-linkedlist">Download Page</a></p>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <footer id="CONTACT">
+            <!--Github linkdin email-->
+            <nav>
+                <div class="table">
+                    <ul class="NavBar">
+                        <li><a href="mailto:davidah121@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/Davidah121">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/alan-harris-a8bb12184?">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>
