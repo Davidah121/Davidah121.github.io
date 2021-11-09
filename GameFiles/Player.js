@@ -21,7 +21,8 @@ function Player(x,y) {
 
     this.update = function() {
     
-        if (Input.getKeyDown("A")) {
+        this.move = false;
+        if (Input.getKeyDown("A") || Input.getKeyDown(37)) {
             if (this.x-this.accel > 0) {
                 this.x-=this.accel;
                 this.move=true;
@@ -30,7 +31,7 @@ function Player(x,y) {
                 this.x=0;
             }
         }
-        else if (Input.getKeyDown("D")) {
+        else if (Input.getKeyDown("D") || Input.getKeyDown(39)) {
             if (this.x+this.accel < Game.canvas.width) {
                 this.x+=this.accel;
                 this.move=true;
@@ -40,7 +41,7 @@ function Player(x,y) {
             }
         }
 
-        if (Input.getKeyDown("W")) {
+        if (Input.getKeyDown("W") || Input.getKeyDown(38)) {
             if (this.y-this.accel > 0) {
                 this.y-=this.accel;
                 this.move=true;
@@ -49,7 +50,7 @@ function Player(x,y) {
                 this.y=0;
             }
         }
-        else if (Input.getKeyDown("S")) {
+        else if (Input.getKeyDown("S") || Input.getKeyDown(40)) {
             if (this.y+this.accel < Game.canvas.height) {
                 this.y+=this.accel;
                 this.move=true;
@@ -58,19 +59,17 @@ function Player(x,y) {
                 this.y=Game.canvas.height;
             }
         }
-    
-        if (!Input.getKeyDown("A") && !Input.getKeyDown("S")
-        && !Input.getKeyDown("D") && !Input.getKeyDown("W") )
-        {
-            this.move=false;
-            this.accel=0;
-        }
+        
     
         if (this.move===true) {
             this.accel+=0.5;
             if (this.accel >=4) {
                 this.accel=4;
             }
+        }
+        else
+        {
+            this.accel = 0;
         }
 
         if(Input.getKeyPressed(" "))
