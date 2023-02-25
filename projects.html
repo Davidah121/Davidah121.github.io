@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Personal javascript and css -->
+        <link rel="stylesheet" href="style.css"/>
+        <script src="javascript.js"></script>
+
+        <title>Alan Harris</title>
+    </head>
+
+    <body>
+        <image class="backgroundImg" src="Images/tmp.png"/>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./projects.html" class="nav-link active">Projects</a></li>
+                        <li class="nav-item"><a href="./music.html" class="nav-link">Music</a></li>
+                        <li class="nav-item"><a href="./Extra.html" class="nav-link">Extra</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+		<div id="PROJECTS" class="container text-light py-5">
+        
+			<h3 class="display-3 fw-bold py-3">General Projects</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+		
+				<div class="col">
+					<h2>GLib</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#GLibInfo" aria-expanded="false" aria-label="Toggle GLibInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/GLib.png"/>
+						</button>
+						
+
+						<div id="GLibInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A static C++ library for general purpose development.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Input for Keyboard, Mouse, DInput and XInput devices</li>
+								<li class="list-group-item">Math functions for a variety of transformations</li>
+								<li class="list-group-item">XML and JSON document loading</li>
+								<li class="list-group-item">A series of Graphics functions including a GUI system</li>
+								<li class="list-group-item">An audio recording and playback system</li>
+								<li class="list-group-item">Networking capabilities</li>
+								<li class="list-group-item">Partial Linux support</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/Davidah121/GLib">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>Pixel Smart</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#PixelSmartInfo" aria-expanded="false" aria-label="Toggle PixelSmartInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/PixelSmart.png"/>
+						</button>
+						
+
+						<div id="PixelSmartInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A simple painting application created using Java. It uses standard Object Oriented Design practices.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Multi layer editing</li>
+								<li class="list-group-item">Different brush types</li>
+								<li class="list-group-item">File saving and loading along with exporting</li>
+								<li class="list-group-item">Undo and Redo functionality</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/dm06724/PixelSmart">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>6502 Emulator</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#6502EmuInfo" aria-expanded="false" aria-label="Toggle 6502EmuInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/6502Emu.png"/>
+						</button>
+						
+						<div id="6502EmuInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A C++ emulator for the 6502 processor used in the NES.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">An Assembler and Deassembler</li>
+								<li class="list-group-item">A memory viewer</li>
+								<li class="list-group-item">Cycle count</li>
+								<li class="list-group-item">Basic debug features allowing the user to advance one instruction at a time.</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/Davidah121/6502EMU">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>CMM</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CMMInfo" aria-expanded="false" aria-label="Toggle CMMInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/CMM.png"/>
+						</button>
+						
+						<div id="CMMInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A C++ application for the Household of Faith Ministry to manage their sermons via a database. It uses the GLIB library also listed on this page.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Automatic updates</li>
+								<li class="list-group-item">Simple controls</li>
+								<li class="list-group-item">Operating System portability to Linux</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/hofministryga/CMM">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>hofministryga.org</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hofWebInfo" aria-expanded="false" aria-label="Toggle hofWebInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/hofministrygaWebpage.png"/>
+						</button>
+						
+						<div id="hofWebInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">The webpage for the Household of Faith Ministry. It is hosted via Github.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Custom domain name</li>
+								<li class="list-group-item">Sermon searching and viewing</li>
+								<li class="list-group-item">Mobile layout</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/hofministryga/hofministryga.github.io">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<h3 class="display-3 fw-bold py-3">Game Projects</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+
+				<div class="col">
+					<h2>Tetris24h</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Tetris24hInfo" aria-expanded="false" aria-label="Toggle Tetris24hInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/Tetris24h.png"/>
+						</button>
+						
+
+						<div id="Tetris24hInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">The game Tetris created in C++ in 24 hours. It only relies on the Windows SDK to display a window and no other external libraries.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Audio output</li>
+								<li class="list-group-item">XInput Support</li>
+								<li class="list-group-item">2 Player support</li>
+								<li class="list-group-item">A main menu</li>
+								<li class="list-group-item">An options menu</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/Davidah121/Tetris24h">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>Quick Pong Game</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#QuickPongGameInfo" aria-expanded="false" aria-label="Toggle QuickPongGameInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/QuickPongGame.png"/>
+						</button>
+						
+
+						<div id="QuickPongGameInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">The game Pong created in C++ in about 7-8 hours. It only relies on the Windows SDK to display a window and no other external libraries.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">2 Player support</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://github.com/Davidah121/QuickPongGame">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>Nocturnal Forest</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NocturnalForestInfo" aria-expanded="false" aria-label="Toggle NocturnalForestInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/NocturnalForest.png"/>
+						</button>
+						
+
+						<div id="NocturnalForestInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A MetroidVania styled game created in Unity for the Aurora Game Development club at Georgia Southern University. Served as a project lead and musician.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Cool pixel art</li>
+								<li class="list-group-item">Custom music</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://thodzen.itch.io/nocturnal-forest">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>DEWM</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DEWMInfo" aria-expanded="false" aria-label="Toggle DEWMInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/DEWM.png"/>
+						</button>
+						
+
+						<div id="DEWMInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A 2D shooter game inspired by DOOM created in Unity for the Aurora Game Development club at Georgia Southern University. Served as a musician and an advisory role.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Cool pixel art</li>
+								<li class="list-group-item">Custom music</li>
+								<li class="list-group-item">Cool sound effects</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://thodzen.itch.io/d">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<h2>DataStrutures Final Project</h2>
+					<div class="card shadow-sm text-dark">
+						<button class="card-img-top navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DataStruturesGameInfo" aria-expanded="false" aria-label="Toggle DataStruturesGameInfo">
+							<img class="img-thumbnail" width="100%" height="100%" src="Images/DataStructuresGame.png"/>
+						</button>
+						
+
+						<div id="DataStruturesGameInfo" class="card-body collapse">
+							<p class="col-md-8 fs-4">A game designed to demonstrate data structure concepts created in Unity. It was our final project for the Data Structures class at Georgia Southern.</p>
+							<p class="col-md-8 fs-4">Features include:</p>
+							<ul class="list-group">
+								<li class="list-group-item">Cool pixel art</li>
+								<li class="list-group-item">Custom sound effects</li>
+							</ul>
+							<p class="col-md-8 fs-4"><a href="https://thodzen.itch.io/stack-linkedlist">Project Link</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+        <footer id="FOOTER" class="footer mt-auto text-center bg-dark">
+            <!--Github linkdin email-->
+            <div class="container pt-4">
+                <a class="btn btn-link btn-lg text-white m-1" href="mailto:davidah121@gmail.com"><i class="fa fa-google"></i></a>
+                <a class="btn btn-link btn-lg text-white m-1" href="https://github.com/Davidah121"><i class="fa fa-github"></i></a>
+                <a class="btn btn-link btn-lg text-white m-1" href="https://www.linkedin.com/in/alan-harris-a8bb12184?"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </footer>
+            
+    </body>
+</html>
