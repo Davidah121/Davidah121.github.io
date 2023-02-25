@@ -1,146 +1,47 @@
+
 html {
     scroll-behavior: smooth;
 }
 
-body.Body {
-    background-color:slategray;
-    margin: 0;
-    padding: 0;
+
+body {
+    background-color: rgb(24, 24, 24);
 }
 
-ul.NavBar {
-    position: relative;
+.backgroundImg {
+    position: fixed;
+    z-index: -1;
     width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #303030;
-}
-
-ul.NavBar > li {
-    display: inline-block;
-    padding: 7px 8px;
-    box-sizing: inherit;
-}
-
-ul.NavBar > li:hover {
-    background-color: #202020;
-}
-
-ul.NavBar > li:active {
-    background-color: #04AA6D;
-}
-
-ul.NavBar > li > a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li.ExtraStyling {
-    float: right;
-}
-
-a.ResumeButton > button {
-    font-size: 200%;
-    padding: 10px;
-    transition: 0.2s ease;
-}
-
-a.ResumeButton > button:hover {
-    font-size: 210%;
-    padding: 10px;
-}
-
-div.Bio {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-div.Bio > p {
-    padding: 10px;
-    color: whitesmoke;
-    font-size: 200%;
-}
-
-div.Projects {
-    background-color: whitesmoke;
-}
-
-h3.ProjectSeparator {
-    text-align: center;
-    font-size: 300%;
-    padding-top: 32px;
-}
-
-div.flexbox-container {
-    padding: 32px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 100%;
+    opacity: 0%;
     
-    justify-content: center;
+    animation-name: showGrid;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
 }
 
-div.flexbox-item {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px;
+@keyframes showGrid {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0%;
+    }
 }
 
-/* div.grid-item:hover .cardImage {
-    opacity: 0.3;
-    width: 110%;
-} */
-
-button.cardImage {
-    border: none;
-    background-color: transparent;
-}
-
-button.cardImage > img{
-    width: 320px;
-    transition: 0.5s ease;
-}
-
-button.cardImage:hover > img{
-    width: 360px;
-}
-
-button.cardImage:active > img{
-    opacity: 0.7;
-}
-
-div.flexbox-info {
+.card-img-top {
     overflow: hidden;
-    max-height: 0px;
-    transition: max-height 0.8s ease;
 }
 
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #303030;
+.img-thumbnail {
+    overflow: hidden;
+    transition: 0.25s;
 }
 
-div.table {
-    display: table;
-    margin: 0 auto;
-}
-
-div.GameContainer {
-    
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-canvas.CanvasClass {
-    margin: 32px;
-    margin-bottom: 96px;
+.img-thumbnail:hover {
+    transform: scale(1.05);
 }

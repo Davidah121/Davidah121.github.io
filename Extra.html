@@ -4,10 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Include CSS here when they exist-->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Personal javascript and css -->
         <link rel="stylesheet" href="style.css"/>
         
-        <!--Include JS here when they exist-->
         <script src="GameFiles/Input.js"></script>
         <script src="GameFiles/Bullet.js"></script>
         <script src="GameFiles/Rock.js"></script>
@@ -17,39 +23,51 @@
         <title>Alan Harris???</title>
     </head>
 
-    <body class="Body">
+    <body>
+        <image class="backgroundImg" src="Images/tmp.png"/>
         <!--Navigation Bar-->
-        <nav>
-            <div>
-                <ul class="NavBar">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="ExtraStyling"><a href="Extra.html">Extra</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="./music.html" class="nav-link">Music</a></li>
+                        <li class="nav-item"><a href="./Extra.html" class="nav-link active">Extra</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
+        
         <!--Extra Stuff-->
-        <div class="GameContainer">
-            <h1>Instructions</h1>
-            <p>WASD or Arrow Keys to move</p>
-            <p>Spacebar to shoot</p>
-            <p>Made using only javascript.</p>
+        <div class="container">
+            <h1 class="display-5 fw-bold text-light">Instructions</h1>
+            <p class="col-md-8 fs-4 text-light">WASD or Arrow Keys to move</p>
+            <p class="col-md-8 fs-4 text-light">Spacebar to shoot</p>
+            <p class="col-md-8 fs-4 text-light">Made using only javascript.</p>
+            <p class="col-md-8 fs-4 text-light">Only playable on a desktop sadly.</p>
+
             <canvas id="miniGameCanvas" class="CanvasClass" width="512" height="512">
 
             </canvas>
         </div>
         
-        <footer id="CONTACT">
+
+        <footer id="FOOTER" class="footer mt-auto text-center bg-dark fixed-bottom">
             <!--Github linkdin email-->
-            <nav>
-                <div class="table">
-                    <ul class="NavBar">
-                        <li><a href="mailto:davidah121@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/Davidah121">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/alan-harris-a8bb12184?">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="container pt-4">
+                <a class="btn btn-link btn-lg text-white m-1" href="mailto:davidah121@gmail.com"><i class="fa fa-google"></i></a>
+                <a class="btn btn-link btn-lg text-white m-1" href="https://github.com/Davidah121"><i class="fa fa-github"></i></a>
+                <a class="btn btn-link btn-lg text-white m-1" href="https://www.linkedin.com/in/alan-harris-a8bb12184?"><i class="fa fa-linkedin"></i></a>
+            </div>
         </footer>
+            
     </body>
 </html>
+
+        
